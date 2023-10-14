@@ -1,0 +1,110 @@
+/* Cart component styles */
+.cart-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background: rgb(178, 208, 209);
+    /* position: relative; Add this line to make it a reference point for absolute positioning */
+  }
+
+  .cart-container h2{
+    margin-top: 6rem;
+    text-align: center;
+    color: #db7612;
+    font-size: 25px;
+  }
+  
+  .cart-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; Add this line to position items and button on the same line */
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .cart-item-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .cart-item-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .cart-item-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .cart-item-price {
+    font-size: 15px;
+    color: #888;
+  }
+  
+  .cart-total {
+    height: 5rem;
+    font-size: 30px;
+    padding-top: 12px;
+    padding-left: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+    background: rgb(79, 195, 199);
+  }
+
+  /* Style for the Remove button */
+.remove-button {
+  background-color: #db7612;
+  color: white;
+  border: none;
+  padding: 5px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 50rem;
+}
+
+.remove-button:hover {
+  background-color: #ff5722; /* Change color on hover */
+}
+.proceed {
+  font-size: 30px;
+  text-align: center;
+  background-color: #db7612;
+  color: white;
+  border: none;
+  padding: 5px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 22rem;
+  margin-right: 20rem;
+}
+
+.proceed:hover {
+  background-color: #ff5722; /* Change color on hover */
+}
+
+.cart-item-details input{
+  width: 100%;
+  /* align-items: center; */
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
+}
+  

@@ -1,0 +1,26 @@
+.title{
+    padding-top: 12rem;
+    padding-left: 10rem;
+    background: url('../../assets/bg.png');
+    background-size: cover;
+    height: 97vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.heading{
+    font-size: 90px;
+    color: #fff;
+}
+.sub-heading{
+    font-size: 30px;
+    color: #db7612;
+}
+.btn2{
+    font-size: 15px;
+    background-color: rgb(79, 195, 199);
+    width: 15%;
+    border: 2px solid rgb(14, 123, 126);
+    border-radius: 7px;
+    padding: 0.5rem;
+    margin-top: 10px;
+}
