@@ -9,9 +9,11 @@ const Items = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3001/products') // Use the correct URL
+      .get('http://localhost:3001/home-products') // Use the correct URL
       .then((response) => {
         setProducts(response.data);
+        //console.log(products[0].ImageFileName.data)
+        // Buffer.from(result[0].Image.data).toString('base64')
         setLoading(false);
       })
       .catch((error) => {
@@ -28,16 +30,19 @@ const Items = () => {
         <p>No products available</p>
       ) : (
         <div className="product-lists">
-          {products.map((product, index) => (
-            <div className="products" key={index}>
-              <img src={`/productImages/${product.ImageFileName}`} alt="" />
+        {products.map((product, index) => (
+          <div className="products" key={index}>
+            {product.ImageFileName && (
+              <img src={`data:image/jpeg;base64,${product.ImageFileName}`} alt="" />
+            )}
               <div className="products-details">
-                <h3 className="products-title">{product['Product Name']}</h3>
-                <p className="products-price">${product['Product Price']}</p>
-              </div>
+              <h3 className="products-title">{product['Product Name']}</h3>
+              <p className="products-price">${product['Product Price']}</p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
+
       )}
       <div className="buttons">
         <Link to="/products" className="btns2">

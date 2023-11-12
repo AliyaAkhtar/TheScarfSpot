@@ -7,7 +7,7 @@ import {FaLinkedinIn} from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="footer">
         <ul className='social-icons'>
             <li><a href='#'><FaTwitter/></a></li>
             <li><a href='#'><BsInstagram/></a></li>

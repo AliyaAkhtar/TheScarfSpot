@@ -18,8 +18,8 @@ const Nav = () => {
         <ul>
             <li><Link to=''>Home</Link></li>
             <li><Link to='/products'>Product</Link></li>
-            <li><a href='#'>Testimonials</a></li>
-            <li><a href='#'>Contact</a></li>
+            {/* <li><a href='#'>Testimonials</a></li> */}
+            <li><a href='#footer'>Contact</a></li>
             <li>
                 <Link to='/cart'><TfiShoppingCart/></Link>
                 <a href='#'><AiOutlineHeart/></a>
